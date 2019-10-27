@@ -18,9 +18,7 @@ class MyRepository {
     }
 
     fun getData(): MutableLiveData<MutableList<MyModel>> {
-        if (list.isEmpty()) {
-            addValues()
-        }
+        addValues()
         dataSet.postValue(list)
         return dataSet
     }
