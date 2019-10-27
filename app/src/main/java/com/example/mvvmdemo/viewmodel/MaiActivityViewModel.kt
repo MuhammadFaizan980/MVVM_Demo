@@ -9,7 +9,7 @@ class MaiActivityViewModel : ViewModel() {
     private var list: MutableLiveData<MutableList<MyModel>> = MutableLiveData()
     private var repo: MyRepository? = null
     fun init() {
-        if (repo != null) {
+        if (list != null) {
             return
         }
         repo = MyRepository.getInstance()
